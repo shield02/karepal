@@ -150,12 +150,13 @@ while True:
                                 break
                     elif 'time' in text.lower():
                         get_time()
-                    elif "check for diabetes" in text.lower():
+                    elif "do i have diabaties" in text.lower():
+                        speak("i can help you check the possibility")
                         speak("Please tell me your age")
                         age = int(recognize_speech())
-                        speak("Please tell me your BMI")
+                        speak("Please tell me your curent Body mass index")
                         bmi = float(recognize_speech())
-                        speak("Please tell me your fasting blood sugar level")
+                        speak("Please tell me your current blood sugar level")
                         fasting_blood_sugar = int(recognize_speech())
                         result = check_diabetes(age, bmi, fasting_blood_sugar)
                         speak(result)
