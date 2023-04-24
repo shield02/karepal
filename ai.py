@@ -90,7 +90,7 @@ def speak(text):
 wake_word = "but"
 
 # Define the music directory
-music_dir = "C:/Users/roberto/Desktop/music"
+music_dir = "C:/Users/roberto/Desktop/music" #make sure to add your own music directory
 
 # Load the music playlist
 playlist = []
