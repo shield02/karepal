@@ -5,7 +5,7 @@ import openai
 import os
 import datetime
 
-openai.api_key = "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"
+openai.api_key = "get the api key from me before running"
 # Initialize the speech recognizer
 r = sr.Recognizer()
 
@@ -40,7 +40,7 @@ def recognize_speech():
         return None
 
 def get_weather(city):
-    weather_api_key = "f4d6af81de704842ee55c2238d8ee4f0"
+    weather_api_key = "get the api key from me before running"
     url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={weather_api_key}"
     res = requests.get(url)
     data = res.json()
